@@ -1,0 +1,75 @@
+.modal-content {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .modal-body {
+    padding: 0;
+    align-items: center;
+  }
+  .btn-close {
+    position: absolute;
+    right: 0;
+    top:0;
+    padding: 1em;
+    background-color: white;
+    color: #000;
+  }
+  h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+    color: #000;
+  }
+  .myform {
+    padding: 2em;
+    max-width: 100%;
+    color: #161515;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    align-items:self-end;
+    justify-self: flex-end;
+  }
+  @media (max-width: 576px) {
+    .myform {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+  .form-control:focus {
+    
+  }
+  .form-control {
+    background-color: white;
+    color: #171515;
+    padding-left: 0;
+    border: 1;
+    border-radius: 1;
+    border-bottom: 3px solid black;
+    align-items: center;
+    text-align: start;
+  }
+  .myform .btn {
+    width: 43%;
+    font-weight: 200;
+    background-color: #fff;
+    border-radius: 0;
+    padding: 0.5em 0;
+    align-items: center;
+  }
+  .myform .btn:hover {
+    background-color: inherit;
+    color: #272121;
+    border-color: #fff;
+  }
+  p {
+    text-align: center;
+    padding-top: 2em;
+    color: grey;
+  }
+  p a {
+    color: #e1e1e1;
+    text-decoration: none;
+    align-items:self-start;
+  }
+  p a:hover {
+    color: #fff;
+  }
