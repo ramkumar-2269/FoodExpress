@@ -1,0 +1,42 @@
+/* App.css */
+.landing-page {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #046b68;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    color: #888;
+  }
+
+  .image {
+    flex: 1;
+  }
+  
+  
+
+  
