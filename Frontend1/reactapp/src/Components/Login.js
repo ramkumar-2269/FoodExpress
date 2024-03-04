@@ -18,7 +18,7 @@ export const Login = ({onClose}) =>{
         <input type="password" class="form-control" id="exampleInputPassword1"/><br/>
     </div>
     <br/><button type="submit" class="btn btn-light mt-3">LOGIN</button><br/>
-    <p>Not a member? <a href="#">Signup now</a></p><br/>
+   
 </form>
 </div>
     </div>

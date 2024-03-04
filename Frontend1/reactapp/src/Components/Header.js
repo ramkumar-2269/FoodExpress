@@ -8,6 +8,8 @@ import Modal from 'react-modal'
 import { useState } from 'react';
 import Login from './Login'
 import './Login'
+import './Register'
+import Register from './Register';
 
 function Header() {
   useEffect(() => {
@@ -19,6 +21,7 @@ function Header() {
 
 
   const [visible,setvisible]=useState(false)
+  const [visible1,setvisible1]=useState(false)
 
   
 
@@ -65,7 +68,7 @@ function Header() {
                     }
                 }}>
                 
-                   <Login onClose={()=>setvisible(false)}/>
+                   <Login onClose={()=>setvisible(false)} />
                     <button onClick={() => setvisible(false)}> Close</button>
                 </Modal>
             </div>
@@ -73,7 +76,51 @@ function Header() {
 
 
           </li>
-          <li><a href="#register">Register</a></li>
+          <li>
+
+          <div>
+            <div>
+
+            
+                <button ClassName="btn btn-open" onClick={() => setvisible1(true)} type ="button" style={{backgroundColor:'white',padding:0,border:0,fontStyle:'consolas',fontSize:15}}>Register </button>
+                <Modal class="modal" isOpen={visible1}   onRequestClose={() => setvisible1(false)}   style={{
+                    overlay: {
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        backgroundColor: 'rgba(0, 0, 0, 0.5)'
+                    },
+                    content: {
+                        position: 'absolute',
+                        top: '80px',
+                        left: '350px',
+                        right: '350px',
+                        bottom: '80px',
+                        border: '1px solid #ccc',
+                        background: 'white',
+                        overflow: 'auto',
+                        WebkitOverflowScrolling: 'touch',
+                        borderRadius: '4px',
+                        outline: 'none',
+                        padding: '20px',
+                        alignitems: 'center',
+                        textAlign:'center',
+                    }
+                }}>
+                
+                   <Register onClose1={()=>setvisible1(false)}/>
+                   <br/>
+                    <button onClick={() => setvisible1(false)}> Close</button>
+                </Modal>
+            </div>
+        </div>
+          
+          
+          
+          
+          </li>
         </ul>
       </nav>
     </header>
