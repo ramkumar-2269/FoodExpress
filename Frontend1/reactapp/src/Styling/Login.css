@@ -1,75 +1,67 @@
-.modal-content {
-    width: 100%;
-    margin: 0 auto;
-    align-items: center;
-  }
-  .modal-body {
-    padding: 0;
-    align-items: center;
-  }
-  .btn-close {
-    position: absolute;
-    right: 0;
-    top:0;
-    padding: 1em;
-    background-color: white;
-    color: #000;
-  }
-  h1 {
-    font-size: 2.3em;
-    font-weight: bold;
-    color: #000;
-  }
-  .myform {
-    padding: 2em;
-    max-width: 100%;
-    color: #161515;
-    box-shadow: 0 4px 6px 0 rgba(247, 247, 249, 0.18);
-    align-items:self-end;
-    justify-self: flex-end;
-  }
-  @media (max-width: 576px) {
-    .myform {
-      max-width: 90%;
-      margin: 0 auto;
-    }
-  }
-  .form-control:focus {
-    
-  }
-  .form-control {
-    background-color: white;
-    color: #171515;
-    padding-left: 0;
-    border: 1;
-    border-radius: 1;
-    border-bottom: 3px solid black;
-    align-items: center;
-    text-align: start;
-  }
-  .myform .btn {
-    width: 43%;
-    font-weight: 200;
-    background-color: #fff;
-    border-radius: 0;
-    padding: 0.5em 0;
-    align-items: center;
-  }
-  .myform .btn:hover {
-    background-color: inherit;
-    color: #272121;
-    border-color: #fff;
-  }
-  p {
-    text-align: center;
-    padding-top: 2em;
-    color: grey;
-  }
-  p a {
-    color: #e1e1e1;
-    text-decoration: none;
-    align-items:self-start;
-  }
-  p a:hover {
-    color: #fff;
-  }
+
+
+.container{
+  display:flex;
+  flex-direction:column;
+  margin:auto;
+  
+  
+
+  margin-top: 150px;
+  background:linear-gradient(rgb(110, 110, 237), violet);
+  padding-bottom: 30px;
+  margin-left: 450px;
+  margin-right: 450px;
+  height: 300px;
+  border-radius: 20px;
+
+}
+.header1{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  gap:9px;
+  width:100%;
+  margin-top: 30px;
+ 
+
+}
+body{
+  background: white;
+}
+.text{
+  font-weight: 200;
+  font-size: 300%;
+  font-style: bold;
+}
+.input-container{
+  margin-top: 25px;
+  display:flex;
+  flex-direction: column;
+  gap:25px;
+}
+
+
+.input{
+  display:flex;
+  align-items: center;
+  margin:auto;
+  width: 270px;
+  height:38px;
+background: white;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+.subm{
+  colour:rgb(159, 159, 243);
+  margin-top:30px;
+  height:40px;
+  width:80px;
+background-color: rgb(118, 118, 242);
+border-radius: 6px;
+}
+
+.input img{
+  margin: 0px 30px;
+}
