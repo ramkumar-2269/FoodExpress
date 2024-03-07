@@ -1,5 +1,5 @@
 import React from 'react'
-import Reacr ,{useState} from 'react'
+import {useState} from 'react'
 import './../Styling/Login.css'
 import user_icon from './../Assests/email.png'
 import password_icon from './../Assests/password.png'
@@ -15,8 +15,11 @@ name=e.target.name
 value=e.target.value
 setUser({...user,[name]:value});
   }
-  let stuj=JSON.stringify(user)
-  console.log(stuj)
+
+  const handleSubmit =()=>{
+    console.log(user);
+  }
+
   return (
   <div className='name'>
       <div className='container'>
@@ -41,7 +44,7 @@ setUser({...user,[name]:value});
           </div>
             
           
-              <button type='sumbit' className='subm'><b>Login</b></button>
+              <button type='sumbit' className='subm' onClick={handleSubmit}><b>Login</b></button>
             
           
         </div>
